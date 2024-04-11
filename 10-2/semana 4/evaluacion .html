@@ -1,0 +1,22 @@
+<script>
+    var edad;
+    var antiguedad;
+
+
+    edad = parseInt(prompt("ingresar edad"));
+    antiguedad=parseInt(prompt("ingresar años laborados"))
+
+    if (edad >=60 && antiguedad < 25) {
+            document.writeln("jubilacion por edad <3.");
+    }
+     if(edad <60 && antiguedad >= 25) {
+            document.writeln("jubilacion por antiguedad joven <3.");       
+     }
+    if (edad >=60 && antiguedad >= 25) {
+            document.writeln("jubilacion por edad adulta <3.");
+    } 
+    else{
+            document.writeln("no se ha jubilado :( .")
+    }
+ 
+</script>

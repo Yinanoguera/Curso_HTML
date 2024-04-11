@@ -1,0 +1,35 @@
+<script>
+    var genero;
+        var edad;
+        var tiempo;
+
+        genero = prompt("escriba el genero (M o F)");
+        edad = parseInt(prompt("escriba la edad"));
+        tiempo = parseInt(prompt("escriba el tiempo(minutos)"));
+
+        if (genero == 'M' || genero == 'm') {
+            if (edad >= 40) {
+                if (tiempo <= 175) {
+                    document.writeln("el atleta es aceptado para participar.");
+                } else {
+                    document.writeln("el atleta NO aceptado para participar.")
+                }
+            } else {
+                if (tiempo <= 150) {
+                    document.writeln("el atleta es aceptado para participar.");
+                } else {
+                    document.writeln("el atleta NO aceptado para participar.")
+                }
+            }
+        } else if (genero == 'F'|| genero == 'f') {
+
+            if (tiempo <= 180) {
+                document.writeln("el atleta es aceptado para participar.");
+            } else {
+                document.writeln("el atleta NO aceptado para participar.")
+            }
+
+        }
+    
+
+</script>

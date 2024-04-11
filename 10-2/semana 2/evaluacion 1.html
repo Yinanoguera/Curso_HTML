@@ -1,0 +1,21 @@
+<script>
+    var hora=0;
+    var minutos=0;
+    var segundos=0;
+    hora = parseInt(prompt("ingresar hora", 0));
+    minutos = parseInt(prompt("ingrese minutos",0));
+    segundos = parseInt(prompt("ingrese segundos", 0));
+    
+    var convertirhoras;
+    convertirhoras = hora + minutos/60 + segundos/3600;
+    var convertirminutos;
+    convertirminutos = minutos+hora*60+segundos/60;
+    var convertirsegundos;
+    convertirsegundos = segundos + minutos*60 + hora*3600
+
+
+    document.write("el tiempo en horas es:" +convertirhoras+"<BR>");
+    document.write("el tiempo en minutos es:"+convertirminutos+"<BR>");
+    document.write("el tiempo en segundos es:"+convertirsegundos+"<BR>");
+    </script>
+    
